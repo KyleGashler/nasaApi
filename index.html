@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="card-header">Welcome wather + Space Gurus - KDG</h1>
+            <div class="card-body">
+                <div id="space">
+                    <div id="apod-access-date"></div>
+                    <iframe src="" id="apod-image">
+                    <div id="apot-title"></div>
+                    <div id="apod-explanation"></div>
+                </div>
+                <button id="nasabutton" class="btn btn-primary">Get Space Image</button>
+                <button id="clearnasabutton" class="btn btn-primary">Clear space image</button>
+            </div>
+            <div class="card-body">
+
+                <input type="text" name="zip" id="zip" placeholder="Enter sip code">
+                <button id="weatherbutton" class="btn btn-primary">Get Weather</button>
+                <button id="clearweatherbutton" class="btn btn-primary">Clear weather</button>
+
+                <div id="weather">
+                    <span class="label">City Name: <span id="city_name"></span></span>
+                    <span class="label">Temperature: <span id="temperature"></span></span>
+                    <span class="label">Pressure: <span id="pressure"></span></span>
+                    <span class="label">Humidity: <span id="humidity"></span></span>
+                    <span class="label">Wind Speed: <span id="wind_speed"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app-index.js"></script> 
+</body>
+</html>
